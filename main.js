@@ -3,12 +3,7 @@ let cookieStoreOne = {
     product: "Butter Cookie",
     customers: 100,
     employees: 10,
-    location: "Silver Spring",
-    addEmployees = function() {
-        if ((this.customers % this.employees) > this.employees) {
-            console.log("Hire new employee");
-        }
-    }
+    location: "Silver Spring"
 };
 
 let cookieStoreTwo = {
@@ -16,10 +11,7 @@ let cookieStoreTwo = {
     product: "Animal Cookie",
     customers: 75,
     employees: 5,
-    location: "Bethesda",
-    getCustomers = function () {
-        console.log(this.customers);
-    }
+    location: "Bethesda" 
 };
 
 let cookieStoreThree = {
@@ -27,21 +19,26 @@ let cookieStoreThree = {
     product: "Vanilla Cookie",
     customers: 55,
     employees: 5,
-    location: "RockVille",
-    getLocation = function () {
-        console.log(this.location);
-    }
+    location: "RockVille"
 }
 
-let storeList = document.getElementsByTagName(ol);
-let storeOne = document.getElementById("ButterCo");
+let storeArray = [];
+
+storeArray.push(cookieStoreOne);
+storeArray.push(cookieStoreTwo);
+storeArray.push(cookieStoreThree);
+
+storeArray = [cookieStoreOne, cookieStoreTwo, cookieStoreThree];
+
+let storeList = document.getElementById("crab-cookies");
+let storeOne = document.createElement("li");
 storeList.appendChild(storeOne);
-storeOne.textContent = cookieStoreOne;
+storeOne.innerHTML = storeArray[0].name;
 
-let storeTwo = document.getElementById("AnimalCo");
-storeList.appendChild(StoreTwo);
-storeTwo.textContent = cookieStoreTwo;
+let storeTwo = document.createElement("li");
+storeList.appendChild(storeTwo);
+storeTwo.innerHTML = storeArray[1].name;
 
-let storeThree = document.getElementById("VanillaCo");
+let storeThree = document.createElement("li");
 storeList.appendChild(storeThree);
-storeThree.textContent = cookieStoreThree;
+storeThree.innerHTML = storeArray[2].name;
