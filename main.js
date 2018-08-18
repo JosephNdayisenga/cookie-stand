@@ -10,7 +10,7 @@ let cookieStoreTwo = {
     name: "AnimalCo Store",
     product: "Animal Cookie",
     customers: 75,
-    employees: 5,
+    employees: 6,
     location: "Bethesda" 
 };
 
