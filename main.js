@@ -9,8 +9,8 @@ let cookieStoreOne = {
 let cookieStoreTwo = {
     name: "AnimalCo Store",
     product: "Animal Cookie",
-    customers: 75,
-    employees: 6,
+    customers: 85,
+    employees: 7,
     location: "Bethesda" 
 };
 
