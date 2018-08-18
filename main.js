@@ -20,7 +20,7 @@ let cookieStoreThree = {
     customers: 55,
     employees: 5,
     location: "RockVille"
-}
+};
 
 let storeArray = [];
 
