@@ -109,10 +109,29 @@ function displayFooter () {
 
 displayFooter();
 
+// Building forms + eventListeners
+
+let storeForm = document.getElementById("store-form");
+
+let storeName = storeForm.storeName;
+
+function CreateNewStore(event){
+    event.preventDefault();
+    let newStore = new Store (storeName.value, "Silver Spring", 6, 20, 97, 8, 250, 450);
+    console.log(newStore);
+    displayTotalCookieSold(newStore);
+}
 
 
+storeForm.addEventListener("submit", CreateNewStore);
 
+// function pouplateTable() {
+//     for (let i = 0; i < storeArray.length; i++) {
+//         displayFooter(storeArray[i]);
+//     }
+// }
 
+// pouplateTable();
 
 
 
