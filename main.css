@@ -1,5 +1,22 @@
+body {
+    width: 100%;
+    background-color: blanchedalmond;
+}
+
+#cutter-image {
+    background-attachment:cover;
+}
+.table-container {
+    width: 900px;
+    margin:auto;
+}
+
+#owner {
+    text-align: center;
+}
+
 .store-table {
-    border: 2px solid;
+    border: 1px solid;
 }
 
 td {
@@ -8,4 +25,23 @@ td {
 
 th {
     border: 1px solid;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    text-align: left;
+}
+
+li {
+    display: inline;
+    margin-right: 50px;
+}
+
+.heading-margin {
+    width: 100px;
+    border: 10px;
 }

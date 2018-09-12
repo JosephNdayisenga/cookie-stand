@@ -7,16 +7,36 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
    
 </head>
-<body>
+<body> 
+    
+<div> <img id ="cutter-image" src= "../assets/crab.png" />
+
+    <ul>
+        <li class="heading-margin"><button>Home</button></li>
+        <li class="heading-margin"><button>Products</button></li>
+        <li class="heading-margin"><button>Services</button></li>
+        <li class="heading-margin"><button>About Us</button></li>
+        <li class="heading-margin"><button>Contact</button></li>
+    </ul>
+
+    <h1 id="owner">JOCELYN'S</h1>
     
     <table id="store-table"></table>
 
     <h1>Create New Store</h1>
     <form id="store-form">
-        <h3>Store Name</h3>
-        <input  name="storeName"></input>
-        <button id="submitButton" type="submit">Submit</button>
+        <h3>Store Name *</h3>
+        <input  required placeholder="Store Name" name="storeName"></input>
+        <select>
+            <option>Manager</option>
+            <option>Employee</option>
+        </select>
+  
     </form>
+
+    <a href='https://www.google.com' id="position-center"><button>Home Page</button></a>
+
+</div>
    
 </body>
 <script src="main.js"></script>
